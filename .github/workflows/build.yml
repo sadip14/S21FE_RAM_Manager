@@ -13,6 +13,8 @@ jobs:
 
       - name: Unzip project
         run: unzip -q project-1.zip -d proj
+      - name: Fix manifest
+        run: sed -i 's/Monitor & RAM/Monitor and RAM/' proj/app/src/main/AndroidManifest.xml
 
       - uses: actions/setup-java@v4
         with:
