@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Unzip project
-        run: unzip -q project.zip -d proj
+        run: unzip -q project-1.zip -d proj
 
       - uses: actions/setup-java@v4
         with:
